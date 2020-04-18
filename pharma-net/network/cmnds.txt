@@ -1,0 +1,30 @@
+// update peer0 of manufacturer org as anchor peer for manufacturer org
+CORE_PEER_LOCALMSPID="manufacturerMSP"
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/manufacturer.pharma-network.com/users/Admin@manufacturer.pharma-network.com/msp
+CORE_PEER_ADDRESS=peer0.manufacturer.pharma-network.com:7051
+peer channel update -o orderer.pharma-network.com:7050 -c pharmachannel -f ./channel-artifacts/manufacturerMSPanchors.tx
+peer chaincode install -n pharnet -v 1.1 -l node -p /opt/gopath/src/github.com/hyperledger/fabric/peer/chaincode/
+
+// Update peer0 of distributor org as anchor peer for distributor org
+CORE_PEER_LOCALMSPID="distributorMSP"
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/distributor.pharma-network.com/users/Admin@distributor.pharma-network.com/msp
+CORE_PEER_ADDRESS=peer0.distributor.pharma-network.com:9051
+peer channel update -o orderer.pharma-network.com:7050 -c pharmachannel -f ./channel-artifacts/distributorMSPanchors.tx
+
+// update peer0 of retailer org as anchor peer for retailer org
+CORE_PEER_LOCALMSPID="retailerMSP"
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/retailer.pharma-network.com/users/Admin@retailer.pharma-network.com/msp
+CORE_PEER_ADDRESS=peer0.retailer.pharma-network.com:11051
+peer channel update -o orderer.pharma-network.com:7050 -c pharmachannel -f ./channel-artifacts/retailerMSPanchors.tx
+
+// update peer0 of consumer org as anchor peer for consumer org
+CORE_PEER_LOCALMSPID="consumerMSP"
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/consumer.pharma-network.com/users/Admin@consumer.pharma-network.com/msp
+CORE_PEER_ADDRESS=peer0.consumer.pharma-network.com:13051
+peer channel update -o orderer.pharma-network.com:7050 -c pharmachannel -f ./channel-artifacts/consumerMSPanchors.tx
+
+// update peer0 of transporter org as anchor peer for transporter org
+CORE_PEER_LOCALMSPID="transporterMSP"
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/transporter.pharma-network.com/users/Admin@transporter.pharma-network.com/msp
+CORE_PEER_ADDRESS=peer0.transporter.pharma-network.com:15051
+peer channel update -o orderer.pharma-network.com:7050 -c pharmachannel -f ./channel-artifacts/transporterMSPanchors.tx

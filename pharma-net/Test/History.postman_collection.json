@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "0bd3c86c-9636-4306-9962-be541c523354",
+		"name": "History",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000\\viewDrugCurrentState",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "drugName",
+							"value": "Paracetamol",
+							"description": "CRN of the buyer company",
+							"type": "text"
+						},
+						{
+							"key": "serialNo",
+							"value": "001",
+							"description": "CRN  of the seller  company",
+							"type": "text"
+						},
+						{
+							"key": "retailerCRN",
+							"value": "RET002",
+							"description": "quantity",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "customerAadhar",
+							"value": "AAD001",
+							"description": "drug Name",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "transporterCRN",
+							"value": "TRA002",
+							"description": "CRN of the company",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000\\viewDrugCurrentState",
+					"host": [
+						"localhost"
+					],
+					"port": "3000\\viewDrugCurrentState"
+				},
+				"description": "viewed the drug current state by the customer Akash"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000\\viewHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "drugName",
+							"value": "Paracetamol",
+							"description": "location",
+							"type": "text"
+						},
+						{
+							"key": "serialNo",
+							"value": "001",
+							"description": "assets",
+							"type": "text"
+						},
+						{
+							"key": "retailerCRN",
+							"value": "TRA002",
+							"description": "CRN of the transporter",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "customerAadhar",
+							"value": "AAD001",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000\\viewHistory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000\\viewHistory"
+				},
+				"description": "drug history is viewed"
+			},
+			"response": []
+		}
+	]
+}

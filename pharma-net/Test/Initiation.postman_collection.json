@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "4144cd99-6f22-4497-a5cc-2425d43db68f",
+		"name": "Initiation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000\\registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "companyCRN",
+							"value": "MAN001",
+							"description": "CRN of the  company",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "Sun Pharma",
+							"description": "CRN  of the   company",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Chennai",
+							"description": "location",
+							"type": "text"
+						},
+						{
+							"key": "organisationRole",
+							"value": "Manufacturer",
+							"description": "organisation role",
+							"type": "text"
+						},
+						{
+							"key": "org",
+							"value": "Manufacturer",
+							"description": "org",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000\\registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000\\registerCompany"
+				},
+				"description": "Registered Sun Pharma company as a Manufacturer"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000\\registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "companyCRN",
+							"value": "TRA001",
+							"description": "CRN of the  company",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "FedEx",
+							"description": "CRN  of the   company",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Delhi",
+							"description": "location",
+							"type": "text"
+						},
+						{
+							"key": "organisationRole",
+							"value": "Transporter",
+							"description": "organisation role",
+							"type": "text"
+						},
+						{
+							"key": "org",
+							"value": "Transporter",
+							"description": "org",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000\\registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000\\registerCompany"
+				},
+				"description": "Registered FedEx company as a Transporter1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000\\registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "companyCRN",
+							"value": "TRA002",
+							"description": "CRN of the  company",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "Blue Dart",
+							"description": "CRN  of the   company",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Bangalore",
+							"description": "location",
+							"type": "text"
+						},
+						{
+							"key": "organisationRole",
+							"value": "Transporter",
+							"description": "organisation role",
+							"type": "text"
+						},
+						{
+							"key": "org",
+							"value": "Transporter",
+							"description": "org",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000\\registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000\\registerCompany"
+				},
+				"description": "Registered Blue Dart company as a Transporter2"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000\\registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "companyCRN",
+							"value": "DIST001",
+							"description": "CRN of the  company",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "VG Pharma",
+							"description": "CRN  of the   company",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Vizag",
+							"description": "location",
+							"type": "text"
+						},
+						{
+							"key": "organisationRole",
+							"value": "Distributor",
+							"description": "organisation role",
+							"type": "text"
+						},
+						{
+							"key": "org",
+							"value": "Distributor",
+							"description": "org",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000\\registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000\\registerCompany"
+				},
+				"description": "Registered VG Pharma as a Distributor"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000\\registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "companyCRN",
+							"value": "RET002",
+							"description": "CRN of the  company",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "upgrad",
+							"description": "CRN  of the   company",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Mumbai",
+							"description": "location",
+							"type": "text"
+						},
+						{
+							"key": "organisationRole",
+							"value": "Retailer",
+							"description": "organisation role",
+							"type": "text"
+						},
+						{
+							"key": "org",
+							"value": "Retailer",
+							"description": "org",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000\\registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "3000\\registerCompany"
+				},
+				"description": "Registered upgrad as a Retailer"
+			},
+			"response": []
+		}
+	]
+}
